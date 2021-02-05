@@ -1,0 +1,16 @@
+title: 云耀云服务器自建mysql数据库
+description: 当拥有一个windows的服务器后，在上面装一个mysql数据库，并能通过外部连接的实例讲解。
+template:
+  repo: mysql-template
+  name: mysql
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
